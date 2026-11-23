@@ -1,0 +1,18 @@
+server:
+      name: Web Server
+      ip: 10.150.16.38
+      port: 1489
+
+database:
+       host: DBA
+       name: Oracle QA
+credentials:
+        user: Me
+        password: ABC
+
+startup_script: |
+        #!/bib/bash
+        echo "This is just a test sample yml file"
+Startup_script1: >
+        This is the day 38 for practicing 
+        Devops.
