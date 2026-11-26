@@ -18,3 +18,5 @@ jobs:
        - name: Printing the runner Operating System OS.
          run: |
               echo "Runner OS is ${{ runner.os }}"
+       - name: Step for checking wrong command output
+         run: dat
