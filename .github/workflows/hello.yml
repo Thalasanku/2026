@@ -8,3 +8,13 @@ jobs:
          uses: actions/checkout@v7
        - name: Printing hello world
          run: echo "Hello from GitHub Actions!"
+       - name: Printing current date and time
+         run: date
+       - name: Printing the branch on which workflow pushed
+         run: |
+               echo "Triggered by branch: ${{ github.ref_name }}"
+       - name: Listing all files in repo
+         run: git ls-files
+       - name: Printing the runner Operating System OS.
+         run: |
+              echo "Runner OS is ${{ runner.os }}"
