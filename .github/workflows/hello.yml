@@ -19,4 +19,4 @@ jobs:
          run: |
               echo "Runner OS is ${{ runner.os }}"
        - name: Step for checking wrong command output
-         run: dat
+         run: date +'%Y-%m-%d'
