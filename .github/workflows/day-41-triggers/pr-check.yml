@@ -1,0 +1,15 @@
+#Goal: To check for pull request triggering when pull request is opened or updated against main.
+name: PR-Check
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prints branch name on which PR check running.
+        run: echo "PR running on branch ${{ github.head_ref }}
+      - name: Creating a new branch, push a commit, and open a PR
+      
