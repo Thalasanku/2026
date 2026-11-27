@@ -11,5 +11,6 @@ jobs:
     steps:
       - name: Prints branch name on which PR check running.
         run: echo "PR running on branch ${{ github.head_ref }}
-      - name: Creating a new branch, push a commit, and open a PR
+      
+      
       
