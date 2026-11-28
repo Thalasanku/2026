@@ -1,0 +1,14 @@
+#This yml file is to check cron schedular working or not
+
+name: Cron check
+
+on:
+  schedule:
+  - cron: '*/5 * * * *'
+
+jobs:
+  schedular_chceck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print line
+        run: echo 'Running workflow of cron'
