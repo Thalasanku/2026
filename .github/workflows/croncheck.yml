@@ -1,0 +1,14 @@
+# This is to check cron schedule trigger work.
+
+name: Shceduler Check
+
+on:
+  schedule:
+  - cron: '*/5 * * * *'
+
+jobs:
+  schedule_check:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Printing Line
+      run: echo "Succefully runs the scheduler check workflow after 5 minutes"
